@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+:root,
+html[data-theme] {
+  --background-color: #090f16;
+}
+
+body {
+  background: var(--background-color);
+}
