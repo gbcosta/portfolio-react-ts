@@ -6,9 +6,7 @@ export const Footer = (): JSX.Element => {
     fontSize: 25,
     cursor: "pointer",
   };
-  const openWebsite = (url: string) => {
-    window.open(url);
-  };
+
   return (
     <Flex sx={{ flexDir: "row", gap: 3, mt: 8 }}>
       <BsTwitter
