@@ -22,6 +22,22 @@ const theme = extendTheme({
   colors: {
     bgColor: "#090f16",
   },
+  components: {
+    Progress: {
+      variants: {
+        black: {
+          filledTrack: {
+            bg: "black",
+          },
+        },
+        white: {
+          filledTrack: {
+            bg: "white",
+          },
+        },
+      },
+    },
+  },
   styles: {
     global: (props: StyleFunctionProps) => ({
       "rppt, body": {

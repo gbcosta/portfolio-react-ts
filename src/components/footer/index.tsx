@@ -8,7 +8,7 @@ export const Footer = (): JSX.Element => {
   };
 
   return (
-    <Flex sx={{ flexDir: "row", gap: 3, mt: 8 }}>
+    <Flex sx={{ flexDir: "row", gap: 3, mt: 8, mb: 8 }}>
       <BsTwitter
         style={iconsStyle}
         onClick={() => {

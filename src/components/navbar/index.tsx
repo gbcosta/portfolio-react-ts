@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import { NavbarButton } from "./NavbarButton";
 import { ColorModeButton } from "./colorModeButton";
-import { Link } from "react-router-dom";
 
 export const Navbar = (): JSX.Element => {
   const color = useColorModeValue("black", "white");

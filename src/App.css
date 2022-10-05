@@ -6,10 +6,14 @@
   border: 0;
 }
 :root,
-html[data-theme] {
+html[data-theme="dark"] {
   --background-color: #090f16;
 }
 
+:root,
+html[data-theme="light"] {
+  --background-color: white;
+}
 body {
-  background: var(--background-color);
+  background: var(--background-color) !important;
 }

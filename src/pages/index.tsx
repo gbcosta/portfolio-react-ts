@@ -37,7 +37,6 @@ export const Index = (): JSX.Element => {
           }}
           sx={{
             cursor: "pointer",
-            transition: "color 0.2s ease-in-out",
             _hover: { color: "red.300" },
             fontWeight: 600,
           }}
