@@ -24,7 +24,7 @@ export const Navbar = (): JSX.Element => {
         <a href={`/`}>GS</a>
       </Heading>
       <Flex sx={{ flexGrow: 1 }} />
-      <NavbarButton>Projects</NavbarButton>
+      <NavbarButton goToUrl="projects">Projects</NavbarButton>
       <NavbarButton goToUrl="about">About</NavbarButton>
       <NavbarButton>Resume</NavbarButton>
       <ColorModeButton />

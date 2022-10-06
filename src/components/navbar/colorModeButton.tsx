@@ -1,25 +1,30 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
 import { VscColorMode } from "react-icons/vsc";
-
+import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
 export const ColorModeButton = (): JSX.Element => {
+  const styleIconColorMode = {
+    fontSize: "28px",
+    marginLeft: "1rem",
+  };
+
   const { colorMode, toggleColorMode } = useColorMode();
+  const IconColorMode =
+    colorMode == "light" ? (
+      <BsFillLightbulbFill style={styleIconColorMode} />
+    ) : (
+      <BsFillLightbulbOffFill style={styleIconColorMode} />
+    );
   return (
     <Flex
       sx={{
-        alignItems: "center",
+        mb: 2,
         _hover: {
           cursor: "pointer",
         },
       }}
       onClick={toggleColorMode}
     >
-      <VscColorMode
-        style={{
-          fontSize: "28px",
-          marginLeft: "1rem",
-          transform: "rotate(180deg)",
-        }}
-      />
+      {IconColorMode}
     </Flex>
   );
 };

@@ -6,21 +6,20 @@ export const About = (): JSX.Element => {
   return (
     <MarginPage>
       <Heading size={"3xl"}>About Me</Heading>
-      <Text fontSize={"xl"} sx={{ mt: 8 }}>
-        I'm in &#10084; with JS & C# so, my skills are around these languages.
-      </Text>
+      <Text fontSize={"xl"} sx={{ mt: 8 }}></Text>
       <Heading size={"xl"} sx={{ mt: 8 }}>
         Game Design
       </Heading>
       <Text fontSize={"xl"} sx={{ mt: 4 }}>
         I'm currently studying Game Design at Unisinos. I studying at Unisinos
-        since 2016
+        since 2016.
       </Text>
       <Heading size={"xl"} sx={{ mt: 8 }}>
         Skills
       </Heading>
       <Text fontSize={"xl"} sx={{ mt: 4 }}>
-        These Are my best skills
+        I'm in &#10084; with JS & C# so, my skills are around these languages.
+        These Are my best skills.
       </Text>
       <SkillProgress value={100}>Javascript</SkillProgress>
       <SkillProgress value={80}>Typescript</SkillProgress>

@@ -1,6 +1,5 @@
-import { Box, Button, Flex, useColorModeValue, Text } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue, Text } from "@chakra-ui/react";
 import "./index.css";
-
 type NavbarProps = {
   children?: string;
   goToUrl?: string;
@@ -8,11 +7,17 @@ type NavbarProps = {
 
 export const NavbarButton = (props: NavbarProps): JSX.Element => {
   const color = useColorModeValue("gray.600", "white");
-
   return (
     <Flex
       className="parent"
-      sx={{ flexDirection: "column", alignItems: "center", ml: 4 }}
+      sx={{
+        flexDirection: "column",
+        alignItems: "center",
+        ml: 4,
+      }}
+      onClick={() => {
+        window.open(props.goToUrl, "_self");
+      }}
     >
       <Text
         sx={{
@@ -27,8 +32,9 @@ export const NavbarButton = (props: NavbarProps): JSX.Element => {
           },
         }}
       >
-        <a href={props.goToUrl}>{props.children}</a>
+        {props.children}
       </Text>
+
       <Box
         className="child"
         sx={{
