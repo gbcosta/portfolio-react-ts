@@ -9,11 +9,38 @@ enum CardSize {
   extraLarge = 700,
 }
 
-export const ProjectCard = (props: { size?: CardSize }): JSX.Element => {
+const findCardSize = (cardSizeString: any): CardSize => {
+  switch (cardSizeString) {
+    case "extraSmall":
+      return CardSize.extraSmall;
+      break;
+    case "small":
+      return CardSize.small;
+      break;
+    case "medium":
+      return CardSize.medium;
+      break;
+    case "large":
+      return CardSize.large;
+      break;
+    case "extraLarge":
+      return CardSize.extraLarge;
+      break;
+
+    default:
+      return CardSize.medium;
+  }
+};
+
+export const ProjectCard = (props: {
+  size?: "extraSmall" | "small" | "medium" | "large" | "extraLarge";
+}): JSX.Element => {
+  const cardSize = findCardSize(props.size);
+
   return (
     <Flex sx={{ width: "100%" }}>
       <Flex
-        height={props.size ? props.size : CardSize.small}
+        height={findCardSize(cardSize) ? cardSize : CardSize.small}
         sx={{
           backgroundImage: testImg,
           backgroundRepeat: "no-repeat",
