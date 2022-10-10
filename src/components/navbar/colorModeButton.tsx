@@ -1,5 +1,4 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
-import { VscColorMode } from "react-icons/vsc";
 import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
 export const ColorModeButton = (): JSX.Element => {
   const styleIconColorMode = {
