@@ -18,7 +18,7 @@ export const ProjectCard = (props: { size?: CardSize }): JSX.Element => {
           backgroundImage: testImg,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          width: "50%",
+          width: "100%",
           backgroundSize: "cover",
         }}
       >
