@@ -26,7 +26,7 @@ export const Navbar = (): JSX.Element => {
       <Flex sx={{ flexGrow: 1 }} />
       <NavbarButton goToUrl="projects">Projects</NavbarButton>
       <NavbarButton goToUrl="about">About</NavbarButton>
-      <NavbarButton>Resume</NavbarButton>
+      <NavbarButton goToUrl="contact">Contact</NavbarButton>
       <ColorModeButton />
     </Flex>
   );
