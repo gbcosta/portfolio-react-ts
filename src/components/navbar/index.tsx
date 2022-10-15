@@ -15,8 +15,9 @@ export const Navbar = (): JSX.Element => {
     <Flex
       sx={{
         mt: 12,
-        ml: "25rem",
-        mr: "25rem",
+        ml: ["1rem", "5rem", "10rem", "15rem", "20rem", "25rem", "30rem"],
+        mr: ["1rem", "5rem", "10rem", "15rem", "20rem", "25rem", "30rem"],
+
         alignItems: "center",
       }}
     >

@@ -12,26 +12,8 @@ export const MarginPage = (props: MarginPageProps): JSX.Element => {
   return (
     <Flex
       sx={{
-        mr: [
-          "1rem",
-          "5rem",
-          "10rem",
-          "15rem",
-          "20rem",
-          "25rem",
-          "30rem",
-          "35rem",
-        ],
-        ml: [
-          "1rem ",
-          "5rem",
-          "10rem",
-          "15rem",
-          "20rem",
-          "25rem",
-          "30rem",
-          "35rem",
-        ],
+        mr: ["1rem", "3rem", "10rem", "15rem", "20rem", "30rem"],
+        ml: ["1rem", "3rem", "10rem", "15rem", "20rem", "30rem"],
         mt: marginTop,
         flexDirection: "column",
       }}
