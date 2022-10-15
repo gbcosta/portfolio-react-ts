@@ -2,3 +2,7 @@
 base = "."
 command = "CI= yarn run build"
 publish = "./dist/"
+
+[[redirects]]
+  from = "/"
+  to = "/projects"
