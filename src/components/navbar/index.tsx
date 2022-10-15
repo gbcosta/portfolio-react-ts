@@ -11,12 +11,13 @@ import { ColorModeButton } from "./colorModeButton";
 
 export const Navbar = (): JSX.Element => {
   const color = useColorModeValue("black", "white");
+  const breakPoints = ["1rem", "5rem", "10rem", "15rem", "20rem", "35rem"];
   return (
     <Flex
       sx={{
         mt: 12,
-        ml: ["1rem", "5rem", "10rem", "15rem", "20rem", "25rem", "30rem"],
-        mr: ["1rem", "5rem", "10rem", "15rem", "20rem", "25rem", "30rem"],
+        ml: breakPoints,
+        mr: breakPoints,
 
         alignItems: "center",
       }}
