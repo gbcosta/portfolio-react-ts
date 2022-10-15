@@ -8,14 +8,30 @@ interface MarginPageProps {
 }
 
 export const MarginPage = (props: MarginPageProps): JSX.Element => {
-  const marginRight = props.marginRight ? props.marginRight : "35rem";
-  const marginLeft = props.marginLeft ? props.marginLeft : "35rem";
   const marginTop = props.marginTop ? props.marginTop : 16;
   return (
     <Flex
       sx={{
-        mr: marginRight,
-        ml: marginLeft,
+        mr: [
+          "1rem",
+          "5rem",
+          "10rem",
+          "15rem",
+          "20rem",
+          "25rem",
+          "30rem",
+          "35rem",
+        ],
+        ml: [
+          "1rem ",
+          "5rem",
+          "10rem",
+          "15rem",
+          "20rem",
+          "25rem",
+          "30rem",
+          "35rem",
+        ],
         mt: marginTop,
         flexDirection: "column",
       }}
