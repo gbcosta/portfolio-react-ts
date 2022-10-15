@@ -1,6 +1,7 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import { MarginPage } from "@components/MarginComponent";
 import { ProjectCard } from "@components/projectCard/projectCard";
+import testImg from "../assets/portfolio.png";
 
 export const Projects = (): JSX.Element => {
   return (
@@ -15,13 +16,9 @@ export const Projects = (): JSX.Element => {
         }}
       >
         <Flex gap={1} sx={{ flexDir: "column" }}>
-          <ProjectCard size={"extraSmall"}></ProjectCard>
-          <ProjectCard></ProjectCard>
+          <ProjectCard image={testImg}></ProjectCard>
         </Flex>
-        <Flex gap={1} sx={{ flexDir: "column" }}>
-          <ProjectCard></ProjectCard>
-          <ProjectCard></ProjectCard>
-        </Flex>
+        <Flex gap={1} sx={{ flexDir: "column" }}></Flex>
       </Flex>
     </MarginPage>
   );
