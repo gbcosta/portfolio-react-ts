@@ -7,7 +7,7 @@ export const Projects = (): JSX.Element => {
     <MarginPage>
       <Heading size={"3xl"}>Projects</Heading>
       <Text fontSize={"xl"} sx={{ mt: 8 }}></Text>
-      <Flex gap={1} sx={{ flexDirection: "row" }}>
+      <Flex gap={1} sx={{ flexDirection: "row", justifyContent: "center" }}>
         <Flex gap={1} sx={{ flexDir: "column" }}>
           <ProjectCard size={"extraSmall"}></ProjectCard>
           <ProjectCard></ProjectCard>
