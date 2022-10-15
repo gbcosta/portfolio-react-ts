@@ -1,5 +1,4 @@
 import { Flex, Text } from "@chakra-ui/react";
-import testImg from "../../assets/portfolio.png";
 
 enum CardSize {
   extraSmall = 300,
@@ -34,15 +33,22 @@ const findCardSize = (cardSizeString: any): CardSize => {
 
 export const ProjectCard = (props: {
   size?: "extraSmall" | "small" | "medium" | "large" | "extraLarge";
+  image: string;
+  url: string;
 }): JSX.Element => {
   const cardSize = findCardSize(props.size);
 
   return (
-    <Flex sx={{ width: "100%" }}>
+    <Flex
+      sx={{ width: "100%" }}
+      onClick={() => {
+        window.open(props.url);
+      }}
+    >
       <Flex
         height={findCardSize(cardSize) ? cardSize : CardSize.small}
         sx={{
-          backgroundImage: testImg,
+          backgroundImage: props.image,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           width: "100%",

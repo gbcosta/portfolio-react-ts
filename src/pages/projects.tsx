@@ -16,7 +16,10 @@ export const Projects = (): JSX.Element => {
         }}
       >
         <Flex gap={1} sx={{ flexDir: "column" }}>
-          <ProjectCard image={testImg}></ProjectCard>
+          <ProjectCard
+            image={testImg}
+            url="https://gbcostasant.netlify.app/"
+          ></ProjectCard>
         </Flex>
         <Flex gap={1} sx={{ flexDir: "column" }}></Flex>
       </Flex>
